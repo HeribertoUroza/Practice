@@ -1,6 +1,6 @@
 # Practice Design Trends With React
 
-### API's to Test
+## API's to Test
 
 https://rapidapi.com/theapiguy/api/the-cocktail-db?endpoint=apiendpoint_67a71546-a41f-4dd0-9c04-f54fa8f375ef
 https://rapidapi.com/andruxnet/api/random-famous-quotes
@@ -8,6 +8,17 @@ https://rapidapi.com/divad12/api/numbers-1
 https://rapidapi.com/MyAllies/api/breaking-news
 
 
+
+### Random Cocktail Generator
+https://the-cocktail-db.p.rapidapi.com/random.php
+
+![API_Sample](public/assets/RandomCocktailAPISample.png)
+
+
+
+<br/>
+<br/>
+<br/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
