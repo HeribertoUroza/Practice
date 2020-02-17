@@ -13,7 +13,7 @@ class Landing extends React.Component {
             <>
                 <div className='container'>
                     <section>
-                        <Link to='Neumorphism' >Neumorphism</Link>
+                        <Link to='/neumorphism' >Neumorphism</Link>
                         {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
