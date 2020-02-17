@@ -9,7 +9,23 @@ class Landing extends React.Component {
     render() {
         return (
             <>
-                LANDING
+                <div class='container'>
+                    <section>
+                        Neumorphism
+                    </section>
+
+                    <section>
+                        Transparency
+                    </section>
+
+                    <section>
+                        Two Tone Color
+                    </section>
+
+                    <section>
+                        Illustrations and Cartoons
+                    </section>
+                </div>
             </>
         )
     }

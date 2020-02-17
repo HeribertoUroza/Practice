@@ -19,10 +19,18 @@ https://api.sunrise-sunset.org/json?lat=40.785091&lng=-73.968285&date=today
 ![API_Sample](public/assets/SunriseSunset.png)
 
 
+### Weather API
+https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
+
+![API_Sample](public/assets/Weather.png)
+
 ## Design Trends to Create
 [Design Article #1](https://www-webdesignerdepot-com.cdn.ampproject.org/v/s/www.webdesignerdepot.com/2020/02/5-web-design-trends-for-2020-that-are-here-to-stay-with-us/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.webdesignerdepot.com%2F2020%2F02%2F5-web-design-trends-for-2020-that-are-here-to-stay-with-us%2F)
 
 [Design Article #2](https://uxplanet.org/top-ui-ux-design-inspiration-85-a2decdf6be13)
+
+[Design Article #3](https://tomkenny.design/articles/10-fantastic-and-creative-web-design-styles/)
+
 
 ### Neumorphism
 
