@@ -36,6 +36,11 @@ class Landing extends React.Component {
 
                     <section>
                         <Link to='/twotone'>Two Tone Color</Link>
+                        <Link to='/twotone'>
+                            <img src='https://elements-cover-images-0.imgix.net/39dd919b-3270-4248-b9bd-d98d76f19c4c?auto=compress%2Cformat&fit=max&w=710&s=5fb0ebda277e660a12120b1dda8770d9'
+                            alt='twotone_image'
+                            className='image' />
+                        </Link>
                         {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
