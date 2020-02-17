@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb",
+    "mappings": "AACA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;ACHD,AAAA,OAAO,CAAC;EACJ,SAAS,EAAE,IAAI;CAClB",
     "sources": [
-        "app.scss"
+        "app.scss",
+        "../containers/LandingPage/_landingpage.scss"
     ],
     "names": [],
     "file": "app.css"
