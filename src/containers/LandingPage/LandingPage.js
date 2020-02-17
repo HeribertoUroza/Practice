@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 class Landing extends React.Component {
     constructor(props) {
         super(props);
@@ -9,21 +11,25 @@ class Landing extends React.Component {
     render() {
         return (
             <>
-                <div class='container'>
+                <div className='container'>
                     <section>
-                        Neumorphism
+                        <Link to='Neumorphism' >Neumorphism</Link>
+                        {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
                     <section>
                         Transparency
+                        {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
                     <section>
                         Two Tone Color
+                        {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
                     <section>
                         Illustrations and Cartoons
+                        {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
                 </div>
             </>
