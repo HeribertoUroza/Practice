@@ -1,11 +1,5 @@
 # Practice Design Trends With React
 
-## API's to Test
-
-https://rapidapi.com/MyAllies/api/breaking-news
-
-
-
 ### Random Cocktail Generator
 https://the-cocktail-db.p.rapidapi.com/random.php
 
