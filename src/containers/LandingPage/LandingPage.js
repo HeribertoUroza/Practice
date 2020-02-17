@@ -14,6 +14,12 @@ class Landing extends React.Component {
                 <div className='container'>
                     <section>
                         <Link to='/neumorphism' >Neumorphism</Link>
+                        <Link to='/neumorphism'>
+                            <img src='https://cdn.dribbble.com/users/1299148/screenshots/9680920/web_1920___1.png' 
+                            alt='neumorphism_image' 
+                            className='image'/>
+                        </Link>
+                        
                         {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 

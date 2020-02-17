@@ -5,5 +5,10 @@
 
 section {
   font-size: 3rem;
+  text-align: center;
+}
+
+section .image {
+  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */
