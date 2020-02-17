@@ -25,6 +25,12 @@ class Landing extends React.Component {
 
                     <section>
                         <Link to='/transparency' >Transparency</Link>
+                        <Link to='/transparency' >
+                            <img src='https://cdn.freebiesbug.com/wp-content/uploads/2012/12/transparent-ui-kit-free-psd.jpg' 
+                            alt='transparency_image' 
+                            className='image' />
+                        </Link>
+
                         {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
