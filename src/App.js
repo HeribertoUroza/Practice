@@ -7,6 +7,10 @@ import NeuPage from './containers/NeuPage/NeuPage';
 import TranPage from './containers/TranPage/TranPage';
 import TwoTonePage from './containers/TwoTonePage/TwoTonePage';
 
+
+// ---- CSS
+import './styles/app.css';
+
 function App() {
   return (
     <>
