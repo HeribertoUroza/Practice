@@ -2,7 +2,6 @@
 
 ## API's to Test
 
-https://rapidapi.com/theapiguy/api/the-cocktail-db?endpoint=apiendpoint_67a71546-a41f-4dd0-9c04-f54fa8f375ef
 https://rapidapi.com/divad12/api/numbers-1
 https://rapidapi.com/MyAllies/api/breaking-news
 
@@ -13,7 +12,10 @@ https://the-cocktail-db.p.rapidapi.com/random.php
 
 ![API_Sample](public/assets/RandomCocktailAPISample.png)
 
+### Nasa Picture of the Day
+https://nasaapidimasv1.p.rapidapi.com/getPictureOfTheDay
 
+![API_Sample](public/assets/NasaPicOfTheDay.png)
 
 <br/>
 <br/>
