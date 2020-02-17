@@ -5,6 +5,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Landing from './containers/LandingPage/LandingPage';
 import NeuPage from './containers/NeuPage/NeuPage';
 import TranPage from './containers/TranPage/TranPage';
+import TwoTonePage from './containers/TwoTonePage/TwoTonePage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' exact component={ Landing } />
           <Route path='/neumorphism' exact component={ NeuPage } />
           <Route path='/transparency' exact component={ TranPage } />
+          <Route path='/twotone' exact component={ TwoTonePage } />
         </Switch>
       </HashRouter>
     </>

@@ -23,14 +23,10 @@ class Landing extends React.Component {
                     </section>
 
                     <section>
-                        Two Tone Color
+                        <Link to='/twotone'>Two Tone Color</Link>
                         {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
-                    <section>
-                        Illustrations and Cartoons
-                        {/* INSERT IMAGE TO LINK TO PAGE */}
-                    </section>
                 </div>
             </>
         )

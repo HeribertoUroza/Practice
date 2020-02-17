@@ -32,11 +32,6 @@ https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
 [Design Article #3](https://tomkenny.design/articles/10-fantastic-and-creative-web-design-styles/)
 
 
-### Neumorphism
-
-### Minimalism
-
-
 <br/>
 <br/>
 <br/>
