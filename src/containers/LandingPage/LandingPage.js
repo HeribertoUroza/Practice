@@ -18,7 +18,7 @@ class Landing extends React.Component {
                     </section>
 
                     <section>
-                        Transparency
+                        <Link to='/transparency' >Transparency</Link>
                         {/* INSERT IMAGE TO LINK TO PAGE */}
                     </section>
 
