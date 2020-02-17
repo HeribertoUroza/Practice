@@ -2,7 +2,6 @@
 
 ## API's to Test
 
-https://rapidapi.com/divad12/api/numbers-1
 https://rapidapi.com/MyAllies/api/breaking-news
 
 
