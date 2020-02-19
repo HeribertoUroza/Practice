@@ -31,6 +31,14 @@ https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
 
 [Design Article #3](https://tomkenny.design/articles/10-fantastic-and-creative-web-design-styles/)
 
+<hr />
+
+## ToDo
+1. Research how to send data through Link component.
+    - Other option is to use hooks, research needed. 
+    - Backup plan is context.
+    - Reason for this is to limit api calls
+    
 
 <br/>
 <br/>
