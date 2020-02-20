@@ -5,18 +5,34 @@ import { Link } from 'react-router-dom';
 class Landing extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            test: 'tetset'
+        };
     }
 
+
+    componentDidMount = () => {
+        console.log('test')
+    };
+
     render() {
+        const { test } = this.state;
+
         return (
             <>
                 <div className='container'>
                     <section>
-                        <Link to='/neumorphism' 
+                        <Link to={{
+                                pathname:'/neumorphism',
+                                state: test
+                                }}
                             className='title'
+                            data={test}
                         >Neumorphism</Link>
-                        <Link to='/neumorphism'>
+                        <Link to={{
+                            pathname: '/neumorphism',
+                            state: this.state.test
+                        }}>
                             <img src='https://cdn.dribbble.com/users/1299148/screenshots/9680920/web_1920___1.png' 
                             alt='neumorphism_image' 
                             className='image'/>
