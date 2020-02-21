@@ -7,8 +7,6 @@ class NeuPage extends React.Component {
     }
 
     componentDidMount = () => {
-        //const { test } = this.props.location.state
-        //console.log(test)
         console.log(this.props)
     }
 

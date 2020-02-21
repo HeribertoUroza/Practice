@@ -16,23 +16,15 @@ class Landing extends React.Component {
     };
 
     render() {
-        const { test } = this.state;
 
         return (
             <>
                 <div className='container'>
                     <section>
-                        <Link to={{
-                                pathname:'/neumorphism',
-                                state: test
-                                }}
+                        <Link to='/neumorphism'
                             className='title'
-                            data={test}
                         >Neumorphism</Link>
-                        <Link to={{
-                            pathname: '/neumorphism',
-                            state: this.state.test
-                        }}>
+                        <Link to='/neumorphism'>
                             <img src='https://cdn.dribbble.com/users/1299148/screenshots/9680920/web_1920___1.png' 
                             alt='neumorphism_image' 
                             className='image'/>
