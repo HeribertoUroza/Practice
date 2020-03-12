@@ -39,6 +39,8 @@ https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
     - Backup plan is context.
     - Reason for this is to limit api calls
     
+2. Impliment context as theme changer for all types
+
 
 <br/>
 <br/>
