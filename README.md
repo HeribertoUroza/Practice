@@ -40,7 +40,8 @@ https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
     - Reason for this is to limit api calls
     
 2. Impliment context as theme changer for all types
-
+3. Look up Bulma for transitions
+4. Use Netlify to host enviroment variables
 
 <br/>
 <br/>
