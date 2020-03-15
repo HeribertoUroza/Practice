@@ -1,28 +1,15 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
-class Landing extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            test: 'tetset'
-        };
-    }
-
-
-    componentDidMount = () => {
-        console.log('test')
-    };
-
-    render() {
-
-        return (
-            <>
-
-            </>
-        )
-    }
+const Landing = () => {
+    return (
+        <>
+            <nav>
+                <button>Numorphism</button>
+                <button>Transparent</button>
+                <button>Two Tone</button>
+            </nav>
+        </>
+    )
 }
 
 export default Landing;

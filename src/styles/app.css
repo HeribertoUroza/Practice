@@ -3,16 +3,17 @@
   padding: 0;
 }
 
-section {
+nav {
+  height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+nav button {
   font-size: 2rem;
-  text-align: center;
-}
-
-section .title {
-  text-decoration: none;
-}
-
-section .image {
-  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */

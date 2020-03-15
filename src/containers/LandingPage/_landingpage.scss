@@ -1,0 +1,12 @@
+
+
+nav {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    button {
+        font-size: 2rem;
+    }
+}
