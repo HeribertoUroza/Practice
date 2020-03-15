@@ -1,5 +1,23 @@
 import React from 'react';
 
-const themeContext = React.createContext(null);
+export const themes = {
+    default: {
+        background: 'none'
+    },
 
-export default themeContext;
+    neumorphism: {
+        background: 'blue'
+    },
+
+    transparent: {
+        background: 'green'
+    },
+
+    twoTone: {
+        background: 'red'
+    }
+}
+
+const ThemeContext = React.createContext(themes);
+
+export default ThemeContext;
