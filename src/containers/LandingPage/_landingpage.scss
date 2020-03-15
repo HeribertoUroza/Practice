@@ -1,12 +1,26 @@
 
-
-nav {
-    height: 10vh;
+.container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 91vh 10vh;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+        "section"
+        "nav";
+    
+    section {
+        color: red;
+        overflow: scroll;
+    }
 
-    button {
-        font-size: 1rem;
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        border-top: 2px black solid;
+        
+        button {
+            font-size: 1rem;
+        }
     }
 }
+

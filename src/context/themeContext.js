@@ -1,9 +1,6 @@
 import React from 'react';
 
 export const themes = {
-    default: {
-        background: 'none'
-    },
 
     neumorphism: {
         background: 'blue'
