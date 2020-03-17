@@ -3,7 +3,7 @@ import React from 'react';
 export const themes = {
 
     neumorphism: {
-        background: 'blue'
+        background: 'blue',
     },
 
     transparent: {

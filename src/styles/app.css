@@ -19,8 +19,18 @@ html, body {
 }
 
 .container section {
-  color: red;
   overflow: scroll;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-gap: 5%;
+}
+
+.container section .card {
+  height: 60vh;
+  border: 2px solid black;
 }
 
 .container nav {
