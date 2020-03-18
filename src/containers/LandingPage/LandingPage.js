@@ -19,7 +19,7 @@ const Landing = () => {
             <div className='container'>
                 <section style={theme}>
                     <div className='card' style={theme}>
-                        test
+                        <div className='card-title'>Title</div>
                     </div>
                     <div className='card'>
 

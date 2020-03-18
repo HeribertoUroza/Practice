@@ -30,6 +30,12 @@ html, body {
 
 .container section .card {
   height: 60vh;
+  border-radius: 20px;
+}
+
+.container section .card .card-title {
+  text-align: center;
+  padding: 10%;
 }
 
 .container nav {

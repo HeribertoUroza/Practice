@@ -17,6 +17,12 @@
 
         .card {
             height: 60vh;
+            border-radius: 20px;
+        
+            .card-title {
+                text-align: center;
+                padding: 10%;
+            }
         }
     }
 
