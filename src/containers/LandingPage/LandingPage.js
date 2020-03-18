@@ -18,8 +18,8 @@ const Landing = () => {
         <> 
             <div className='container'>
                 <section style={theme}>
-                    <div className='card'>
-
+                    <div className='card' style={theme}>
+                        test
                     </div>
                     <div className='card'>
 
