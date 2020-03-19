@@ -1,8 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 
 // ---- CONTEXT
 import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
+
+// ---- API CALLS
+import { RandomCocktail } from '../../services/apiCalls';
+
+// ---- LOCAL FUNCTIONS
+import { getIngredientsAndMeasurements } from '../../services/functions';
+
 
 const Landing = () => {
     const currentTheme = useContext(ThemeContext);
@@ -16,7 +23,24 @@ const Landing = () => {
         setTheme(currentTheme[e.target.name])
         setNavTheme(currentNavTheme[e.target.name])
     }
-
+    
+    // useEffect(() => {
+    //     RandomCocktail()
+    //         .then( ({ data }) => {
+    //             const rootObj = data.drinks[0];
+    
+    //             const drinkName = rootObj.strDrink;
+    //             const isAlcoholic = rootObj.strAlcoholic;
+    //             const drinkImg = rootObj.strDrinkThumb;
+    //             const instructions = rootObj.strInstructions;
+                
+    //             getIngredientsAndMeasurements(rootObj)
+    //         })
+    //         .catch( error => {
+    //             console.log(error)
+    //         })
+    // });
+    
     return (
         <> 
             <div className='container'>
