@@ -31,6 +31,7 @@ html, body {
 .container section .card {
   height: 60vh;
   border-radius: 20px;
+  border: 2px solid black;
 }
 
 .container section .card .card-title {

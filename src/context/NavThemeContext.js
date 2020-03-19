@@ -3,6 +3,7 @@ import React from 'react';
 export const navThemes = {
     neumorphism: {
         background: 'orange',
+        
     },
 
     transparent: {
