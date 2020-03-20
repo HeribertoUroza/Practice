@@ -24,22 +24,22 @@ const Landing = () => {
         setNavTheme(currentNavTheme[e.target.name])
     }
     
-    // useEffect(() => {
-    //     RandomCocktail()
-    //         .then( ({ data }) => {
-    //             const rootObj = data.drinks[0];
+    useEffect(() => {
+        RandomCocktail()
+            .then( ({ data }) => {
+                const rootObj = data.drinks[0];
     
-    //             const drinkName = rootObj.strDrink;
-    //             const isAlcoholic = rootObj.strAlcoholic;
-    //             const drinkImg = rootObj.strDrinkThumb;
-    //             const instructions = rootObj.strInstructions;
+                const drinkName = rootObj.strDrink;
+                const isAlcoholic = rootObj.strAlcoholic;
+                const drinkImg = rootObj.strDrinkThumb;
+                const instructions = rootObj.strInstructions;
                 
-    //             getIngredientsAndMeasurements(rootObj)
-    //         })
-    //         .catch( error => {
-    //             console.log(error)
-    //         })
-    // });
+                const list = getIngredientsAndMeasurements(rootObj)
+            })
+            .catch( error => {
+                console.log(error)
+            })
+    });
     
     return (
         <> 
