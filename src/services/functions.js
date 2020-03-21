@@ -1,18 +1,23 @@
 
 // ---- GET ALL INGREDIENTS AND MEASUREMENTS
 const getIngredientsAndMeasurements = ( rootObj ) => {
-    let list = `<ul className='list-container'>`
 
-    for(let i = 1; i<15; i++){
-        //console.log(rootObj[`strIngredient${i}`], rootObj[`strMeasure${i}`])
-        
-        list += `
-        <li>${rootObj['strIngredient' + i]}</li><li>${rootObj['strMeasure' + i]}</li>
-        `
-        
+    let arr = []
+
+    for (let i = 1; i < 15; i++) {
+        if (rootObj[`strIngredient${i}`]) {
+            arr.push(rootObj[`strIngredient${i}`], rootObj[`strMeasure${i}`])
+        }
     }
-    console.log(list)
-    return list + '</ul>'
+    
+    return arr.map((e, i) => {
+        if (i % 2 === 1) {
+            return `<li>${e}</li>`
+        } else {
+            return `<li>${e}</li>`
+        }
+
+    })
 };
 
 export {

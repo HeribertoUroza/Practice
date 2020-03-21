@@ -53,6 +53,11 @@ const Landing = (props) => {
                         <div className='card-title'>{rootObj.strDrink}</div>
                         <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
                         <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
+                        <ul list-container>
+                        {
+                            getIngredientsAndMeasurements(rootObj)
+                        }
+                        </ul>
                     </div>
                     <div className='card'>
 
