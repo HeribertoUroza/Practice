@@ -11,12 +11,13 @@ import { RandomCocktail } from '../../services/apiCalls';
 import { getIngredientsAndMeasurements } from '../../services/functions';
 
 
-const Landing = () => {
+const Landing = (props) => {
     const currentTheme = useContext(ThemeContext);
     const currentNavTheme = useContext(NavThemeContext);
 
     const [theme, setTheme] = useState(themes);
     const [navTheme, setNavTheme] = useState(navThemes); 
+    const [rootObj, getRootObj] = useState({});
 
     const toggleTheme = (e) => {
 
@@ -27,26 +28,31 @@ const Landing = () => {
     useEffect(() => {
         RandomCocktail()
             .then( ({ data }) => {
-                const rootObj = data.drinks[0];
-    
-                const drinkName = rootObj.strDrink;
-                const isAlcoholic = rootObj.strAlcoholic;
-                const drinkImg = rootObj.strDrinkThumb;
-                const instructions = rootObj.strInstructions;
+                getRootObj(data.drinks[0]);
+                // const rootObj = data.drinks[0];
                 
-                const list = getIngredientsAndMeasurements(rootObj)
+                // setDrinkName(rootObj.strDrink);
+                // const isAlcoholic = rootObj.strAlcoholic;
+                // const drinkImg = rootObj.strDrinkThumb;
+                // const instructions = rootObj.strInstructions;
+                
+                // const list = getIngredientsAndMeasurements(rootObj)
+                // setIngAndMea(list)
+
             })
             .catch( error => {
                 console.log(error)
             })
-    });
+    }, [] );
     
     return (
         <> 
             <div className='container'>
                 <section style={theme}>
                     <div className='card' style={theme}>
-                        <div className='card-title'>Title</div>
+                        <div className='card-title'>{rootObj.strDrink}</div>
+                        <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
+                        <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
                     </div>
                     <div className='card'>
 
