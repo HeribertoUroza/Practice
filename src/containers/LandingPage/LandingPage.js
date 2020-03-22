@@ -26,24 +26,17 @@ const Landing = () => {
     }
     
     useEffect(() => {
+        
         RandomCocktail()
             .then( ({ data }) => {
                 getRootObj(data.drinks[0]);
-                // const rootObj = data.drinks[0];
-                
-                // setDrinkName(rootObj.strDrink);
-                // const isAlcoholic = rootObj.strAlcoholic;
-                // const drinkImg = rootObj.strDrinkThumb;
-                // const instructions = rootObj.strInstructions;
-                
-                // const list = getIngredientsAndMeasurements(rootObj)
-
             })
             .catch( error => {
                 console.log(error)
             })
     }, [] );
-    console.log(rootObj)
+    
+
     return (
         <> 
             <div className='container'>
@@ -59,19 +52,27 @@ const Landing = () => {
                         }
                         </ul>
                     </div>
-                    <div className='card'>
+                    <div className='card' style={theme}>
+                        <div className='card-title'>{rootObj.strDrink}</div>
+                        <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
+                        <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
+                        <div className='card-subTitle'>{rootObj.strGlass}</div>
+                        <ul className='list-container'>
+                            {
+                                getIngredientsAndMeasurements(rootObj)
+                            }
+                        </ul>
+                    </div>
+                    <div className='card' style={theme}>
 
                     </div>
-                    <div className='card'>
+                    <div className='card' style={theme}>
 
                     </div>
-                    <div className='card'>
+                    <div className='card' style={theme}>
 
                     </div>
-                    <div className='card'>
-
-                    </div>
-                    <div className='card'>
+                    <div className='card' style={theme}>
 
                     </div>
                 </section>

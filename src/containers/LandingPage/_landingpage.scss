@@ -45,9 +45,10 @@
         display: grid;
         grid-template-columns: 50% 50%;
         text-align: center;
-        // .list-item {
-           
-        // }
+        
+        .list-item {
+            padding: 2%
+        }
     }
 
     nav {

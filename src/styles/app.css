@@ -61,6 +61,10 @@ html, body {
   text-align: center;
 }
 
+.container .list-container .list-item {
+  padding: 2%;
+}
+
 .container nav {
   display: -ms-grid;
   display: grid;
