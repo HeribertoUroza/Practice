@@ -40,6 +40,16 @@
         }
     }
 
+    .list-container {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        // .list-item {
+           
+        // }
+    }
+
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

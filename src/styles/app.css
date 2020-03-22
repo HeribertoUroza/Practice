@@ -51,6 +51,15 @@ html, body {
   border-radius: 20px;
 }
 
+.container .list-container {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
 .container nav {
   display: -ms-grid;
   display: grid;

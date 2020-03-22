@@ -1,3 +1,8 @@
+import React from 'react';
+
+// ---- COMPONENTS
+//import ListItem from '../component/ListItem';
+
 
 // ---- GET ALL INGREDIENTS AND MEASUREMENTS
 const getIngredientsAndMeasurements = ( rootObj ) => {
@@ -9,17 +14,17 @@ const getIngredientsAndMeasurements = ( rootObj ) => {
             arr.push(rootObj[`strIngredient${i}`], rootObj[`strMeasure${i}`])
         }
     }
-    
+
     return arr.map((e, i) => {
         if (i % 2 === 1) {
-            return `<li>${e}</li>`
+            return <li className='list-item' key={i} >{e}</li>
         } else {
-            return `<li>${e}</li>`
+            return <li className='list-item' key={i} >{e}</li>
         }
 
     })
 };
 
 export {
-    getIngredientsAndMeasurements,
-}
+    getIngredientsAndMeasurements
+};
