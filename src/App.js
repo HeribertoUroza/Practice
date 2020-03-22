@@ -4,7 +4,7 @@ import React from 'react';
 import Landing from './containers/LandingPage/LandingPage';
 
 // ---- CONTEXT
-import ThemeContext, { themes } from './context/ThemeContext';
+import ThemeContext, { themes } from './context/ThemeContext.js';
 
 // ---- CSS
 import './styles/app.css';
