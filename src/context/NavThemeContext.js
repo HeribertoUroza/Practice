@@ -10,7 +10,7 @@ export const navThemes = {
     },
 
     transparent: {
-        background: 'brown'
+        backgroundColor: 'brown'
     },
 
     twoTone: {
