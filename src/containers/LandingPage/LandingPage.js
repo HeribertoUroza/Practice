@@ -11,7 +11,7 @@ import { RandomCocktail } from '../../services/apiCalls';
 import { getIngredientsAndMeasurements } from '../../services/functions';
 
 
-const Landing = (props) => {
+const Landing = () => {
     const currentTheme = useContext(ThemeContext);
     const currentNavTheme = useContext(NavThemeContext);
 
@@ -37,14 +37,13 @@ const Landing = (props) => {
                 // const instructions = rootObj.strInstructions;
                 
                 // const list = getIngredientsAndMeasurements(rootObj)
-                // setIngAndMea(list)
 
             })
             .catch( error => {
                 console.log(error)
             })
     }, [] );
-    
+    console.log(rootObj)
     return (
         <> 
             <div className='container'>
@@ -53,6 +52,7 @@ const Landing = (props) => {
                         <div className='card-title'>{rootObj.strDrink}</div>
                         <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
                         <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
+                        <div className='card-subTitle'>{rootObj.strGlass}</div>
                         <ul className='list-container'>
                         {
                             getIngredientsAndMeasurements(rootObj)

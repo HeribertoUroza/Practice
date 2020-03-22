@@ -42,6 +42,7 @@ html, body {
 
 .container section .card .card-subTitle {
   text-align: center;
+  text-transform: capitalize;
   padding-bottom: 2%;
   color: gray;
 }

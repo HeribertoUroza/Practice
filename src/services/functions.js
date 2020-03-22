@@ -1,9 +1,5 @@
 import React from 'react';
 
-// ---- COMPONENTS
-//import ListItem from '../component/ListItem';
-
-
 // ---- GET ALL INGREDIENTS AND MEASUREMENTS
 const getIngredientsAndMeasurements = ( rootObj ) => {
 
