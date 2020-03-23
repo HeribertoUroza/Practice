@@ -26,7 +26,7 @@ const Landing = () => {
     }
     
     useEffect(() => {
-        
+
         RandomCocktail()
             .then( ({ data }) => {
                 getRootObj(data.drinks[0]);
@@ -77,9 +77,9 @@ const Landing = () => {
                     </div>
                 </section>
                 <nav style={navTheme}>
-                    <button onClick={toggleTheme} name='neumorphism' >Neumorphism</button>
-                    <button onClick={toggleTheme} name='transparent' >Transparent</button>
-                    <button onClick={toggleTheme} name='twoTone' >Two Tone</button>
+                    <button onClick={toggleTheme} name='neumorphism' style={navTheme} >Neumorphism</button>
+                    <button onClick={toggleTheme} name='transparent' style={navTheme} >Transparent</button>
+                    <button onClick={toggleTheme} name='twoTone' style={navTheme} >Two Tone</button>
                 </nav>
             </div>
         </>
