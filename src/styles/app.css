@@ -35,8 +35,6 @@ html, body {
   height: auto;
   border-radius: 20px;
   border: 2px solid black;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
 }
 
 .container section .card .card-title {
