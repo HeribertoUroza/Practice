@@ -5,7 +5,7 @@ import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
 
 // ---- API CALLS
-import { RandomCocktail } from '../../services/apiCalls';
+import { RandomCocktail, NasaPic } from '../../services/apiCalls';
 
 // ---- LOCAL FUNCTIONS
 import { getIngredientsAndMeasurements } from '../../services/functions';
@@ -34,6 +34,15 @@ const Landing = () => {
             .catch( error => {
                 console.log(error)
             })
+
+        NasaPic()
+            .then(response => {
+                console.log('res',response);
+            })
+            .catch(err => {
+                console.log(err.toString());
+            });
+
     }, [] );
     
 
