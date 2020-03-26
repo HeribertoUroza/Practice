@@ -55,6 +55,14 @@ html, body {
   border-radius: 20px;
 }
 
+.container section .card .card-body {
+  padding: 2%;
+  letter-spacing: 1px;
+  max-height: 250px;
+  line-height: 20px;
+  overflow: scroll;
+}
+
 .container .list-container {
   list-style: none;
   display: -ms-grid;
