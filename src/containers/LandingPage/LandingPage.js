@@ -17,7 +17,8 @@ const Landing = () => {
 
     const [theme, setTheme] = useState(themes);
     const [navTheme, setNavTheme] = useState(navThemes); 
-    const [rootObj, getRootObj] = useState({});
+    const [rootRCObj, getRCRootObj] = useState({});
+    const [rootNPObj, getNPRootObj] = useState({});
 
     const toggleTheme = (e) => {
 
@@ -29,18 +30,18 @@ const Landing = () => {
 
         RandomCocktail()
             .then( ({ data }) => {
-                getRootObj(data.drinks[0]);
+                getRCRootObj(data.drinks[0]);
             })
             .catch( error => {
                 console.log(error)
             })
 
         NasaPic()
-            .then(response => {
-                console.log('res',response);
+            .then( ({data}) => {
+                getNPRootObj(data);
             })
-            .catch(err => {
-                console.log(err.toString());
+            .catch(error => {
+                console.log(error);
             });
 
     }, [] );
@@ -51,29 +52,22 @@ const Landing = () => {
             <div className='container'>
                 <section style={theme}>
                     <div className='card' style={theme}>
-                        <div className='card-title'>{rootObj.strDrink}</div>
-                        <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
-                        <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
-                        <div className='card-subTitle'>{rootObj.strGlass}</div>
+                        <div className='card-title'>{rootRCObj.strDrink}</div>
+                        <div className='card-subTitle'>{rootRCObj.strAlcoholic}</div>
+                        <img src={rootRCObj.strDrinkThumb} alt={rootRCObj.strDrinkThumb} className='card-image'></img>
+                        <div className='card-subTitle'>{rootRCObj.strGlass}</div>
                         <ul className='list-container'>
                         {
-                            getIngredientsAndMeasurements(rootObj)
+                            getIngredientsAndMeasurements(rootRCObj)
                         }
                         </ul>
                     </div>
+                    
                     <div className='card' style={theme}>
-                        <div className='card-title'>{rootObj.strDrink}</div>
-                        <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
-                        <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
-                        <div className='card-subTitle'>{rootObj.strGlass}</div>
-                        <ul className='list-container'>
-                            {
-                                getIngredientsAndMeasurements(rootObj)
-                            }
-                        </ul>
-                    </div>
-                    <div className='card' style={theme}>
-
+                        <div className='card-title'>{rootNPObj.title}</div>
+                        <div className='card-subTitle'>{rootNPObj.copyright}</div>
+                        <img src={rootNPObj.url} alt={rootNPObj.url} className='card-image'></img>
+                        <div className='card-body'>{rootNPObj.explanation}</div>
                     </div>
                     <div className='card' style={theme}>
 
