@@ -7,11 +7,13 @@ https://the-cocktail-db.p.rapidapi.com/random.php
 
 ![API_Sample](public/assets/RandomCocktailAPISample.png)
 
-### Nasa Picture of the Day
+### Nasa Picture of the Day [NOT ACTIVE]
 https://nasaapidimasv1.p.rapidapi.com/getPictureOfTheDay
 
-![API_Sample](public/assets/NasaPicOfTheDay.png)
+### Nasa Picture of the Day [UPDATED]
+https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
+![API_Sample](public/assets/NasaPic.png)
 
 ### Sunrise and Sunset
 https://api.sunrise-sunset.org/json?lat=40.785091&lng=-73.968285&date=today
