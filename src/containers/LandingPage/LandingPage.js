@@ -51,6 +51,7 @@ const Landing = () => {
         <> 
             <div className='container'>
                 <section style={theme}>
+                    {/* Random Cocktail */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootRCObj.strDrink}</div>
                         <div className='card-subTitle'>{rootRCObj.strAlcoholic}</div>
@@ -63,21 +64,19 @@ const Landing = () => {
                         </ul>
                     </div>
                     
+                    {/* NASA Pic of the Day */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootNPObj.title}</div>
                         <div className='card-subTitle'>{rootNPObj.copyright}</div>
                         <img src={rootNPObj.url} alt={rootNPObj.url} className='card-image'></img>
                         <div className='card-body'>{rootNPObj.explanation}</div>
                     </div>
-                    <div className='card' style={theme}>
 
-                    </div>
+                    {/* Weather */}
                     <div className='card' style={theme}>
-
+                        
                     </div>
-                    <div className='card' style={theme}>
-
-                    </div>
+                    
                 </section>
                 <nav style={navTheme}>
                     <button onClick={toggleTheme} name='neumorphism' style={navTheme} >Neumorphism</button>
