@@ -12,6 +12,16 @@ const RandomCocktail = () => {
     })
 }
 
+// ----NASA PICTURE OF THE DAY
+const NasaPic = () => {
+    const api_key = process.env.REACT_APP_api_key;
+    return Axios({
+        method: "get",
+        url: `https://api.nasa.gov/planetary/apod?api_key=${api_key}`, 
+    })
+}
+
 export {
     RandomCocktail,
+    NasaPic
 }

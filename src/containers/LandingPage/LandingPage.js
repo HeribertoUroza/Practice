@@ -5,7 +5,7 @@ import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
 
 // ---- API CALLS
-import { RandomCocktail } from '../../services/apiCalls';
+import { RandomCocktail, NasaPic } from '../../services/apiCalls';
 
 // ---- LOCAL FUNCTIONS
 import { getIngredientsAndMeasurements } from '../../services/functions';
@@ -17,7 +17,8 @@ const Landing = () => {
 
     const [theme, setTheme] = useState(themes);
     const [navTheme, setNavTheme] = useState(navThemes); 
-    const [rootObj, getRootObj] = useState({});
+    const [rootRCObj, getRCRootObj] = useState({});
+    const [rootNPObj, getNPRootObj] = useState({});
 
     const toggleTheme = (e) => {
 
@@ -26,14 +27,23 @@ const Landing = () => {
     }
     
     useEffect(() => {
-        
+
         RandomCocktail()
             .then( ({ data }) => {
-                getRootObj(data.drinks[0]);
+                getRCRootObj(data.drinks[0]);
             })
             .catch( error => {
                 console.log(error)
             })
+
+        NasaPic()
+            .then( ({data}) => {
+                getNPRootObj(data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+
     }, [] );
     
 
@@ -41,45 +51,37 @@ const Landing = () => {
         <> 
             <div className='container'>
                 <section style={theme}>
+                    {/* Random Cocktail */}
                     <div className='card' style={theme}>
-                        <div className='card-title'>{rootObj.strDrink}</div>
-                        <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
-                        <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
-                        <div className='card-subTitle'>{rootObj.strGlass}</div>
+                        <div className='card-title'>{rootRCObj.strDrink}</div>
+                        <div className='card-subTitle'>{rootRCObj.strAlcoholic}</div>
+                        <img src={rootRCObj.strDrinkThumb} alt={rootRCObj.strDrinkThumb} className='card-image'></img>
+                        <div className='card-subTitle'>{rootRCObj.strGlass}</div>
                         <ul className='list-container'>
                         {
-                            getIngredientsAndMeasurements(rootObj)
+                            getIngredientsAndMeasurements(rootRCObj)
                         }
                         </ul>
                     </div>
+                    
+                    {/* NASA Pic of the Day */}
                     <div className='card' style={theme}>
-                        <div className='card-title'>{rootObj.strDrink}</div>
-                        <div className='card-subTitle'>{rootObj.strAlcoholic}</div>
-                        <img src={rootObj.strDrinkThumb} alt={rootObj.strDrinkThumb} className='card-image'></img>
-                        <div className='card-subTitle'>{rootObj.strGlass}</div>
-                        <ul className='list-container'>
-                            {
-                                getIngredientsAndMeasurements(rootObj)
-                            }
-                        </ul>
+                        <div className='card-title'>{rootNPObj.title}</div>
+                        <div className='card-subTitle'>{rootNPObj.copyright}</div>
+                        <img src={rootNPObj.url} alt={rootNPObj.url} className='card-image'></img>
+                        <div className='card-body'>{rootNPObj.explanation}</div>
                     </div>
-                    <div className='card' style={theme}>
 
-                    </div>
+                    {/* Weather */}
                     <div className='card' style={theme}>
-
+                        
                     </div>
-                    <div className='card' style={theme}>
-
-                    </div>
-                    <div className='card' style={theme}>
-
-                    </div>
+                    
                 </section>
                 <nav style={navTheme}>
-                    <button onClick={toggleTheme} name='neumorphism' >Neumorphism</button>
-                    <button onClick={toggleTheme} name='transparent' >Transparent</button>
-                    <button onClick={toggleTheme} name='twoTone' >Two Tone</button>
+                    <button onClick={toggleTheme} name='neumorphism' style={navTheme} >Neumorphism</button>
+                    <button onClick={toggleTheme} name='transparent' style={navTheme} >Transparent</button>
+                    <button onClick={toggleTheme} name='twoTone' style={navTheme} >Two Tone</button>
                 </nav>
             </div>
         </>
