@@ -11,6 +11,7 @@ import { RandomCocktail, NasaPic } from '../../services/apiCalls';
 import { getIngredientsAndMeasurements } from '../../services/functions';
 
 
+
 const Landing = () => {
     const currentTheme = useContext(ThemeContext);
     const currentNavTheme = useContext(NavThemeContext);
@@ -45,12 +46,13 @@ const Landing = () => {
             });
 
     }, [] );
-    
+
 
     return (
         <> 
             <div className='container'>
                 <section style={theme}>
+
                     {/* Random Cocktail */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootRCObj.strDrink}</div>
@@ -58,12 +60,12 @@ const Landing = () => {
                         <img src={rootRCObj.strDrinkThumb} alt={rootRCObj.strDrinkThumb} className='card-image'></img>
                         <div className='card-subTitle'>{rootRCObj.strGlass}</div>
                         <ul className='list-container'>
-                        {
-                            getIngredientsAndMeasurements(rootRCObj)
-                        }
+                            {
+                                getIngredientsAndMeasurements(rootRCObj)
+                            }
                         </ul>
                     </div>
-                    
+
                     {/* NASA Pic of the Day */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootNPObj.title}</div>
@@ -71,13 +73,12 @@ const Landing = () => {
                         <img src={rootNPObj.url} alt={rootNPObj.url} className='card-image'></img>
                         <div className='card-body'>{rootNPObj.explanation}</div>
                     </div>
-
+                    
                     {/* Weather */}
                     <div className='card' style={theme}>
-                        
                     </div>
-                    
                 </section>
+
                 <nav style={navTheme}>
                     <button onClick={toggleTheme} name='neumorphism' style={navTheme} >Neumorphism</button>
                     <button onClick={toggleTheme} name='transparent' style={navTheme} >Transparent</button>
