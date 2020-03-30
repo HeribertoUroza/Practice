@@ -7,9 +7,6 @@ https://the-cocktail-db.p.rapidapi.com/random.php
 
 ![API_Sample](public/assets/RandomCocktailAPISample.png)
 
-### Nasa Picture of the Day [NOT ACTIVE]
-https://nasaapidimasv1.p.rapidapi.com/getPictureOfTheDay
-
 ### Nasa Picture of the Day [UPDATED]
 https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
@@ -25,6 +22,11 @@ https://api.sunrise-sunset.org/json?lat=40.785091&lng=-73.968285&date=today
 https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
 
 ![API_Sample](public/assets/Weather.png)
+
+### Giphy API
+api.giphy.com/v1/gifs/search
+
+<!-- need to add sample -->
 
 ## Design Trends to Create
 [Design Article #1](https://www-webdesignerdepot-com.cdn.ampproject.org/v/s/www.webdesignerdepot.com/2020/02/5-web-design-trends-for-2020-that-are-here-to-stay-with-us/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.webdesignerdepot.com%2F2020%2F02%2F5-web-design-trends-for-2020-that-are-here-to-stay-with-us%2F)
