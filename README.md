@@ -7,9 +7,6 @@ https://the-cocktail-db.p.rapidapi.com/random.php
 
 ![API_Sample](public/assets/RandomCocktailAPISample.png)
 
-### Nasa Picture of the Day [NOT ACTIVE]
-https://nasaapidimasv1.p.rapidapi.com/getPictureOfTheDay
-
 ### Nasa Picture of the Day [UPDATED]
 https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
 
@@ -26,6 +23,11 @@ https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
 
 ![API_Sample](public/assets/Weather.png)
 
+### Giphy API
+api.giphy.com/v1/gifs/search
+
+<!-- need to add sample -->
+
 ## Design Trends to Create
 [Design Article #1](https://www-webdesignerdepot-com.cdn.ampproject.org/v/s/www.webdesignerdepot.com/2020/02/5-web-design-trends-for-2020-that-are-here-to-stay-with-us/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.webdesignerdepot.com%2F2020%2F02%2F5-web-design-trends-for-2020-that-are-here-to-stay-with-us%2F)
 
@@ -36,14 +38,21 @@ https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
 <hr />
 
 ## ToDo
-1. Research how to send data through Link component.
+3. Look up Bulma for transitions
+5. Thinking about every button click changing the full design vs only cards as it is now. 
+6. Create more components so the landing page doesnt get too cluttered. 
+7. Implement Giphy with Weather API.
+    - Weather API needs to be called server side. will try to make a Python Backend. 
+
+## COMPLETED
+1. Research how to send data through Link component.[COMPLETED]
     - Other option is to use hooks, research needed. 
     - Backup plan is context.
     - Reason for this is to limit api calls
     
-2. Impliment context as theme changer for all types
-3. Look up Bulma for transitions
-4. Use Netlify to host enviroment variables
+2. Impliment context as theme changer for all types [COMPLETED]
+
+4. Use Netlify to host enviroment variables [COMPLETED]
 
 <br/>
 <br/>
@@ -69,58 +78,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
