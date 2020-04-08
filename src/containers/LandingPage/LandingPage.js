@@ -5,7 +5,7 @@ import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
 
 // ---- API CALLS
-import { RandomCocktail, NasaPic, getWeather } from '../../services/apiCalls';
+import { RandomCocktail, NasaPic, } from '../../services/apiCalls';
 
 // ---- LOCAL FUNCTIONS
 import { getIngredientsAndMeasurements } from '../../services/functions';
@@ -45,13 +45,13 @@ const Landing = () => {
                 console.log(error);
             })
 
-        getWeather()
-            .then( data => {
-                console.log(data)
-            })
-            .catch( error => {
-                console.log(error)
-            })
+        // getWeather()
+        //     .then( data => {
+        //         console.log(data)
+        //     })
+        //     .catch( error => {
+        //         console.log(error)
+        //     })
 
     }, [] );
 
