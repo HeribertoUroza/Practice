@@ -43,6 +43,7 @@ api.giphy.com/v1/gifs/search
 6. Create more components so the landing page doesnt get too cluttered. 
 7. Implement Giphy with Weather API.
     - Weather API needs to be called server side. will try to make a Python Backend. 
+8. Switch API calls to backend
 
 ## COMPLETED
 1. Research how to send data through Link component.[COMPLETED]

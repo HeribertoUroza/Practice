@@ -21,7 +21,20 @@ const NasaPic = () => {
     })
 }
 
+const getWeather = () => {
+    const weatherAPI = '40cef0b27157fa941a0a410eeb184fcd'
+    return Axios({
+        method: 'get',
+        url: `https://api.darksky.net/forecast/${weatherAPI}/40.7829,73.9654`,
+        headers: { 
+            'Access-Control-Allow-Origin': '*'
+        },
+        crossdomain: true
+    })
+}
+
 export {
     RandomCocktail,
-    NasaPic
+    NasaPic,
+    getWeather
 }
