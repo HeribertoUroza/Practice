@@ -5,7 +5,7 @@ import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
 
 // ---- API CALLS
-import { RandomCocktail, NasaPic, getWeather} from '../../services/apiCalls';
+import { RandomCocktail, NasaPic, getWeather, getGif } from '../../services/apiCalls';
 
 // ---- LOCAL FUNCTIONS
 import { getIngredientsAndMeasurements } from '../../services/functions';
@@ -86,6 +86,7 @@ const Landing = () => {
                     {/* Weather */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootWEObj.summary}</div>
+                        <img src={getGif(rootWEObj.summary)} alt={rootWEObj.summary} className='card-image'></img>
                     </div>
                 </section>
 
