@@ -23,8 +23,26 @@ const getWeather = () => {
     })
 }
 
+const getGif = (query) => {
+    console.log('test',typeof(query))
+    let data = Axios({
+        method: 'post',
+        url: ``,
+        data: { query }
+    })
+
+    data
+    .then(data => {
+        console.log(data.data)
+    })
+    .catch( err => {
+        console.log(err)
+    })
+}
+
 export {
     RandomCocktail,
     NasaPic,
-    getWeather
+    getWeather,
+    getGif
 }
