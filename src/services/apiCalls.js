@@ -16,6 +16,7 @@ const NasaPic = () => {
     })
 }
 
+// ----GET CURRENT WEATHER FOR NY
 const getWeather = () => {
     return Axios({
         method: 'get',
@@ -23,27 +24,7 @@ const getWeather = () => {
     })
 }
 
-// const getGif = (query) => {
-//     let gifUrl = '';
-    
-//     let data = Axios({
-//         method: 'post',
-//         url: ``,
-//         data: { query }
-//     })
-
-//     data
-//     .then(data => {
-//         gifUrl = data.data.data[0].images.original.url
-//         console.log('gif url', gifUrl)
-//     })
-//     .catch( err => {
-//         console.log(err)
-//     })
-//     console.log('gif url', gifUrl)
-//     return ''
-// }
-  
+// ----GET GIF BASED ON CURRENT WEATHER
 const getGif = async(query) => {
     try {
         let data = await Axios({
