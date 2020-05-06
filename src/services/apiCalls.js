@@ -4,24 +4,48 @@ import Axios from "axios";
 const RandomCocktail = () => {
     return Axios({
         method: 'get',
-        url: 'https://the-cocktail-db.p.rapidapi.com/random.php',
-        headers: {
-            "x-rapidapi-host": process.env.REACT_APP_xrapidapihost,
-            "x-rapidapi-key": process.env.REACT_APP_xrapidapikey
-        }
+        url: ``,
     })
 }
 
 // ----NASA PICTURE OF THE DAY
 const NasaPic = () => {
-    const api_key = process.env.REACT_APP_api_key;
     return Axios({
         method: "get",
-        url: `https://api.nasa.gov/planetary/apod?api_key=${api_key}`, 
+        url: ``, 
     })
+}
+
+// ----GET CURRENT WEATHER FOR NY
+const getWeather = () => {
+    return Axios({
+        method: 'get',
+        url: ``,
+    })
+}
+
+// ----GET GIF BASED ON CURRENT WEATHER
+const getGif = async(query) => {
+    try {
+        let data = await Axios({
+        method: 'post',
+            url: ``,
+            data: { query },
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+    })
+
+        return data.data.data[0].images.original.url
+
+    } catch(error) {
+        console.log(error)
+    }
 }
 
 export {
     RandomCocktail,
-    NasaPic
+    NasaPic,
+    getWeather,
+    getGif
 }

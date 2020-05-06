@@ -5,7 +5,7 @@ import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
 
 // ---- API CALLS
-import { RandomCocktail, NasaPic, } from '../../services/apiCalls';
+import { RandomCocktail, NasaPic, getWeather, getGif } from '../../services/apiCalls';
 
 // ---- LOCAL FUNCTIONS
 import { getIngredientsAndMeasurements } from '../../services/functions';
@@ -20,6 +20,8 @@ const Landing = () => {
     const [navTheme, setNavTheme] = useState(navThemes); 
     const [rootRCObj, getRCRootObj] = useState({});
     const [rootNPObj, getNPRootObj] = useState({});
+    const [rootWEObj, getWERootObj] = useState({});
+    const [gifUrl, getGifUrl] = useState('')
 
     const toggleTheme = (e) => {
 
@@ -45,14 +47,21 @@ const Landing = () => {
                 console.log(error);
             })
 
-        // getWeather()
-        //     .then( data => {
-        //         console.log(data)
-        //     })
-        //     .catch( error => {
-        //         console.log(error)
-        //     })
+        getWeather()
+            .then( data => {
+                getWERootObj(data.data.currently)
 
+                getGif(data.data.currently.summary)
+                    .then(data => {
+                        getGifUrl(data)
+                    })
+                    .catch( error => {
+                        console.log(error)
+                    })
+            })
+            .catch( error => {
+                console.log(error)
+            })
     }, [] );
 
 
@@ -84,6 +93,8 @@ const Landing = () => {
                     
                     {/* Weather */}
                     <div className='card' style={theme}>
+                        <div className='card-title'>{rootWEObj.summary}</div>
+                        <img src={ gifUrl } alt={rootWEObj.summary} className='card-image'></img>
                     </div>
                 </section>
 
