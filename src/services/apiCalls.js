@@ -23,21 +23,43 @@ const getWeather = () => {
     })
 }
 
-const getGif = (query) => {
-    console.log('test',typeof(query))
-    let data = Axios({
+// const getGif = (query) => {
+//     let gifUrl = '';
+    
+//     let data = Axios({
+//         method: 'post',
+//         url: ``,
+//         data: { query }
+//     })
+
+//     data
+//     .then(data => {
+//         gifUrl = data.data.data[0].images.original.url
+//         console.log('gif url', gifUrl)
+//     })
+//     .catch( err => {
+//         console.log(err)
+//     })
+//     console.log('gif url', gifUrl)
+//     return ''
+// }
+  
+const getGif = async(query) => {
+    try {
+        let data = await Axios({
         method: 'post',
-        url: ``,
-        data: { query }
+            url: ``,
+            data: { query },
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
     })
 
-    data
-    .then(data => {
-        console.log(data.data)
-    })
-    .catch( err => {
-        console.log(err)
-    })
+        return data.data.data[0].images.original.url
+
+    } catch(error) {
+        console.log(error)
+    }
 }
 
 export {
