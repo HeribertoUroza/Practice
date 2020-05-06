@@ -21,6 +21,7 @@ const Landing = () => {
     const [rootRCObj, getRCRootObj] = useState({});
     const [rootNPObj, getNPRootObj] = useState({});
     const [rootWEObj, getWERootObj] = useState({});
+    const [gifUrl, getGifUrl] = useState('')
 
     const toggleTheme = (e) => {
 
@@ -49,11 +50,18 @@ const Landing = () => {
         getWeather()
             .then( data => {
                 getWERootObj(data.data.currently)
+
+                getGif(data.data.currently.summary)
+                    .then(data => {
+                        getGifUrl(data)
+                    })
+                    .catch( error => {
+                        console.log(error)
+                    })
             })
             .catch( error => {
                 console.log(error)
             })
-
     }, [] );
 
 
@@ -86,7 +94,7 @@ const Landing = () => {
                     {/* Weather */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootWEObj.summary}</div>
-                        <img src={getGif(rootWEObj.summary)} alt={rootWEObj.summary} className='card-image'></img>
+                        <img src={ gifUrl } alt={rootWEObj.summary} className='card-image'></img>
                     </div>
                 </section>
 
