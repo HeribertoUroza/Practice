@@ -1,32 +1,7 @@
 # Practicing Design Trends With React
 
-## API's to Use
-
-### Random Cocktail Generator
-https://the-cocktail-db.p.rapidapi.com/random.php
-
-![API_Sample](public/assets/RandomCocktailAPISample.png)
-
-### Nasa Picture of the Day [UPDATED]
-https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
-
-![API_Sample](public/assets/NasaPic.png)
-
-### Sunrise and Sunset
-https://api.sunrise-sunset.org/json?lat=40.785091&lng=-73.968285&date=today
-
-![API_Sample](public/assets/SunriseSunset.png)
-
-
-### Weather API
-https://api.darksky.net/forecast/[KEY]/[LAT],[LON]
-
-![API_Sample](public/assets/Weather.png)
-
-### Giphy API
-api.giphy.com/v1/gifs/search
-
-<!-- need to add sample -->
+## Backend has API calls
+`https://github.com/HeribertoUroza/practiceBE`
 
 ## Design Trends to Create
 [Design Article #1](https://www-webdesignerdepot-com.cdn.ampproject.org/v/s/www.webdesignerdepot.com/2020/02/5-web-design-trends-for-2020-that-are-here-to-stay-with-us/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.webdesignerdepot.com%2F2020%2F02%2F5-web-design-trends-for-2020-that-are-here-to-stay-with-us%2F)
