@@ -21,7 +21,7 @@ const Landing = () => {
     const [rootRCObj, getRCRootObj] = useState({});
     const [rootNPObj, getNPRootObj] = useState({});
     const [rootWEObj, getWERootObj] = useState({});
-    const [gifUrl, getGifUrl] = useState('')
+    const [gifUrl, getGifUrl] = useState('');
 
     const toggleTheme = (e) => {
 
