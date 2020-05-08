@@ -29,7 +29,7 @@ const getGif = async(query) => {
     try {
         let data = await Axios({
             method: 'post',
-            url: process.env.REACT_APP_weather,
+            url: process.env.REACT_APP_gif,
             data: { query },
             headers: {
                 'Access-Control-Allow-Origin': '*'
