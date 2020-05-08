@@ -19,7 +19,7 @@ const NasaPic = () => {
 // ----GET CURRENT WEATHER FOR NY
 const getWeather = () => {
     return Axios({
-        method: 'get',
+        method: "get",
         url: process.env.REACT_APP_weather,
     })
 }
@@ -28,13 +28,13 @@ const getWeather = () => {
 const getGif = async(query) => {
     try {
         let data = await Axios({
-        method: 'post',
-            url: process.env.REACT_APP_weather,
+            method: 'post',
+            url: process.env.REACT_APP_gif,
             data: { query },
             headers: {
                 'Access-Control-Allow-Origin': '*'
             }
-    })
+        })
 
         return data.data.data[0].images.original.url
 
