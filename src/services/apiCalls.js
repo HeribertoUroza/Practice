@@ -4,7 +4,7 @@ import Axios from "axios";
 const RandomCocktail = () => {
     return Axios({
         method: 'get',
-        url: ``,
+        url: process.env.REACT_APP_cocktail,
     })
 }
 
@@ -12,7 +12,7 @@ const RandomCocktail = () => {
 const NasaPic = () => {
     return Axios({
         method: "get",
-        url: ``, 
+        url: process.env.REACT_APP_nasa, 
     })
 }
 
@@ -20,7 +20,7 @@ const NasaPic = () => {
 const getWeather = () => {
     return Axios({
         method: 'get',
-        url: ``,
+        url: process.env.REACT_APP_weather,
     })
 }
 
@@ -29,7 +29,7 @@ const getGif = async(query) => {
     try {
         let data = await Axios({
         method: 'post',
-            url: ``,
+            url: process.env.REACT_APP_weather,
             data: { query },
             headers: {
                 'Access-Control-Allow-Origin': '*'

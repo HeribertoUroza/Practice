@@ -21,7 +21,7 @@ const Landing = () => {
     const [rootRCObj, getRCRootObj] = useState({});
     const [rootNPObj, getNPRootObj] = useState({});
     const [rootWEObj, getWERootObj] = useState({});
-    const [gifUrl, getGifUrl] = useState('')
+    const [gifUrl, getGifUrl] = useState('');
 
     const toggleTheme = (e) => {
 
@@ -70,6 +70,13 @@ const Landing = () => {
             <div className='container'>
                 <section style={theme}>
 
+                    {/* Weather */}
+                    <div className='card' style={theme}>
+                        <div className='card-title'>{rootWEObj.summary}</div>
+                        <div className='card-subTitle'>New York</div>
+                        <img src={gifUrl} alt={rootWEObj.summary} className='card-image'></img>
+                    </div>
+                    
                     {/* Random Cocktail */}
                     <div className='card' style={theme}>
                         <div className='card-title'>{rootRCObj.strDrink}</div>
@@ -91,11 +98,6 @@ const Landing = () => {
                         <div className='card-body'>{rootNPObj.explanation}</div>
                     </div>
                     
-                    {/* Weather */}
-                    <div className='card' style={theme}>
-                        <div className='card-title'>{rootWEObj.summary}</div>
-                        <img src={ gifUrl } alt={rootWEObj.summary} className='card-image'></img>
-                    </div>
                 </section>
 
                 <nav style={navTheme}>
