@@ -1,4 +1,6 @@
 # Practicing Design Trends With React
+Hosted on Netlify. https://confident-ptolemy-17e79e.netlify.app/
+`Currently Mobile Only`
 
 ## Backend has API calls
 `https://github.com/HeribertoUroza/practiceBE`
