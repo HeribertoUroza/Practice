@@ -1,9 +1,9 @@
 # Practicing Design Trends With React
-Hosted on Netlify. https://confident-ptolemy-17e79e.netlify.app/
+[Hosted on Netlify. Click Here](https://confident-ptolemy-17e79e.netlify.app/)
 `Currently Mobile Only`
 
 ## Backend has API calls
-`https://github.com/HeribertoUroza/practiceBE`
+[https://github.com/HeribertoUroza/practiceBE](https://github.com/HeribertoUroza/practiceBE)
 
 ## Design Trends to Create
 [Design Article #1](https://www-webdesignerdepot-com.cdn.ampproject.org/v/s/www.webdesignerdepot.com/2020/02/5-web-design-trends-for-2020-that-are-here-to-stay-with-us/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.webdesignerdepot.com%2F2020%2F02%2F5-web-design-trends-for-2020-that-are-here-to-stay-with-us%2F)
