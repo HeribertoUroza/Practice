@@ -1,7 +1,9 @@
 # Practicing Design Trends With React
+[Hosted on Netlify. Click Here](https://confident-ptolemy-17e79e.netlify.app/)
+`Currently Mobile Only`
 
 ## Backend has API calls
-`https://github.com/HeribertoUroza/practiceBE`
+[https://github.com/HeribertoUroza/practiceBE](https://github.com/HeribertoUroza/practiceBE)
 
 ## Design Trends to Create
 [Design Article #1](https://www-webdesignerdepot-com.cdn.ampproject.org/v/s/www.webdesignerdepot.com/2020/02/5-web-design-trends-for-2020-that-are-here-to-stay-with-us/amp/?usqp=mq331AQCKAE%3D&amp_js_v=0.1#referrer=https%3A%2F%2Fwww.google.com&amp_tf=From%20%251%24s&ampshare=https%3A%2F%2Fwww.webdesignerdepot.com%2F2020%2F02%2F5-web-design-trends-for-2020-that-are-here-to-stay-with-us%2F)
@@ -16,9 +18,7 @@
 3. Look up Bulma for transitions
 5. Thinking about every button click changing the full design vs only cards as it is now. 
 6. Create more components so the landing page doesnt get too cluttered. 
-7. Implement Giphy with Weather API.
-    - Weather API needs to be called server side. will try to make a Python Backend. 
-8. Switch API calls to backend
+9. Switch button tags to anchor tags to better update style
 
 ## COMPLETED
 1. Research how to send data through Link component.[COMPLETED]
@@ -29,6 +29,11 @@
 2. Impliment context as theme changer for all types [COMPLETED]
 
 4. Use Netlify to host enviroment variables [COMPLETED]
+
+7. Implement Giphy with Weather API.
+    - Weather API needs to be called server side. will try to make a Python Backend. [Completed]
+
+8. Switch API calls to backend [Completed]
 
 <br/>
 <br/>
