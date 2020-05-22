@@ -89,11 +89,12 @@ html, body {
   border-top: 2px black solid;
 }
 
-.container nav button {
+.container nav .nav-btn {
   font-size: 1rem;
 }
 
-.container nav:hover {
-  background-color: orange;
+.container nav .nav-btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=app.css.map */

@@ -68,11 +68,14 @@
         grid-template-rows: 1fr;
         border-top: 2px black solid;
         
-        button {
+        .nav-btn {
             font-size: 1rem;
-        } &:hover {
-            background-color: orange;
-        }
+            
+            &:focus {
+                transform: scale(1.1);
+            
+            }
+        } 
     }
 }
 
