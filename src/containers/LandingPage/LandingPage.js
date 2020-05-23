@@ -101,9 +101,9 @@ const Landing = () => {
                 </section>
 
                 <nav className='nav' style={navTheme}>
-                    <button className='nav-btn' onClick={toggleTheme} name='neumorphism' style={navTheme} >Neumorphism</button>
-                    <button className='nav-btn' onClick={toggleTheme} name='transparent' style={navTheme} >Transparent</button>
-                    <button className='nav-btn' onClick={toggleTheme} name='twoTone' style={navTheme} >Two Tone</button>
+                    <a className='nav-btn' onClick={toggleTheme} href='none' name='neumorphism' style={navTheme} >Neumorphism</a>
+                    <a className='nav-btn' onClick={toggleTheme} href='none' name='transparent' style={navTheme} >Transparent</a>
+                    <a className='nav-btn' onClick={toggleTheme} href='none' name='twoTone' style={navTheme} >Two Tone</a>
                 </nav>
             </div>
         </>
