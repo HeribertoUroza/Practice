@@ -3,16 +3,11 @@ import React from 'react';
 export const themes = {
 
     neumorphism: {
-        background: '#EEEEEE',
-        border: 'none',
-        boxShadow: 
-            `-12px -12px 12px 0 rgba(255,255,255, 1),
-            12px 12px 12px 0 rgba(0,0,0, .05)`,
-            
+        background: '#EEEEEE',  
     },
 
     transparent: {
-        background: 'green'
+        backgroundImage: 'url(https://images.unsplash.com/photo-1516893842880-5d8aada7ac05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60)'
     },
 
     twoTone: {

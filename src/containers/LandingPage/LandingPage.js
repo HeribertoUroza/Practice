@@ -3,6 +3,7 @@ import React, { useContext, useState, useEffect } from 'react';
 // ---- CONTEXT
 import ThemeContext, { themes } from '../../context/ThemeContext';
 import NavThemeContext, { navThemes } from '../../context/NavThemeContext';
+import CardThemeContext, { cardThemes } from '../../context/CardThemeContext';
 
 // ---- API CALLS
 import { RandomCocktail, NasaPic, getWeather, getGif } from '../../services/apiCalls';
@@ -15,9 +16,12 @@ import { getIngredientsAndMeasurements } from '../../services/functions';
 const Landing = () => {
     const currentTheme = useContext(ThemeContext);
     const currentNavTheme = useContext(NavThemeContext);
+    const currentCardTheme = useContext(CardThemeContext);
 
     const [theme, setTheme] = useState(themes);
-    const [navTheme, setNavTheme] = useState(navThemes); 
+    const [navTheme, setNavTheme] = useState(navThemes);
+    const [cardTheme, setCardTheme] = useState(cardThemes);
+    
     const [rootRCObj, getRCRootObj] = useState({});
     const [rootNPObj, getNPRootObj] = useState({});
     const [rootWEObj, getWERootObj] = useState({});
@@ -27,6 +31,7 @@ const Landing = () => {
 
         setTheme(currentTheme[e.target.name])
         setNavTheme(currentNavTheme[e.target.name])
+        setCardTheme(currentCardTheme[e.target.name])
     }
     
     useEffect(() => {
@@ -71,14 +76,14 @@ const Landing = () => {
                 <section style={theme}>
 
                     {/* Weather */}
-                    <div className='card' style={theme}>
+                    <div className='card' style={cardTheme}>
                         <div className='card-title'>{rootWEObj.summary}</div>
                         <div className='card-subTitle'>New York</div>
                         <img src={gifUrl} alt={rootWEObj.summary} className='card-image'></img>
                     </div>
                     
                     {/* Random Cocktail */}
-                    <div className='card' style={theme}>
+                    <div className='card' style={cardTheme}>
                         <div className='card-title'>{rootRCObj.strDrink}</div>
                         <div className='card-subTitle'>{rootRCObj.strAlcoholic}</div>
                         <img src={rootRCObj.strDrinkThumb} alt={rootRCObj.strDrinkThumb} className='card-image'></img>
@@ -91,7 +96,7 @@ const Landing = () => {
                     </div>
 
                     {/* NASA Pic of the Day */}
-                    <div className='card' style={theme}>
+                    <div className='card' style={cardTheme}>
                         <div className='card-title'>{rootNPObj.title}</div>
                         <div className='card-subTitle'>{rootNPObj.copyright}</div>
                         
