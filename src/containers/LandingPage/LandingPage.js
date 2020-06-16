@@ -96,7 +96,9 @@ const Landing = () => {
                         <div className='card-subTitle'>{rootNPObj.copyright}</div>
                         
                         {
-                            `${rootNPObj.url}`.includes('youtube') ? <iframe src={rootNPObj.url} title={rootNPObj.title}></iframe> : <img src={rootNPObj.url} alt={rootNPObj.url} className='card-image'></img>
+                            `${rootNPObj.url}`.includes('youtube') ? 
+                            <iframe src={rootNPObj.url} title={rootNPObj.title}></iframe> : 
+                            <img src={rootNPObj.url} alt={rootNPObj.url} className='card-image'></img>
                         }
                         
                         <div className='card-body'>{rootNPObj.explanation}</div>
