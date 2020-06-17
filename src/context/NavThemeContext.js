@@ -13,10 +13,11 @@ export const navThemes = {
     },
 
     transparent: {
-        backgroundColor: 'orange',
+        backgroundColor: 'rgba(0,0,0,0.6)',
         border: 'none',
         textDecoration: 'none',
         cursor: 'pointer',
+        color: 'white'
     },
 
     twoTone: {

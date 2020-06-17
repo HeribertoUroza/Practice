@@ -11,7 +11,12 @@ export const cardThemes = {
     },
 
     transparent: {
-        
+        backgroundColor: 'rgba(0,0,0,0.75)',
+        border: 'none',
+        color: 'white',
+        boxShadow:
+            `12px 12px 12px 0 rgba(0,0,0, .5),
+            -12px -12px 12px 0 rgba(0,0,0, .1)`,
     },
 
     twoTone: {
