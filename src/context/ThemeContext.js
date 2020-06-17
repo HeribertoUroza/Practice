@@ -13,7 +13,7 @@ export const themes = {
     },
 
     twoTone: {
-        background: 'red'
+        background: '#F6B743',
     }
 }
 

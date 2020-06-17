@@ -21,8 +21,8 @@ export const navThemes = {
     },
 
     twoTone: {
-        background: 'grey',
-        border: 'none',
+        background: '#F6B743',
+        border: '#fff9ef 2px solid',
         textDecoration: 'none',
         cursor: 'pointer',
     }

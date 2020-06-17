@@ -20,7 +20,8 @@ export const cardThemes = {
     },
 
     twoTone: {
-        background: 'red'
+        background: '#fff9ef',
+        borderColor: '#fff9ef'
     }
 }
 
