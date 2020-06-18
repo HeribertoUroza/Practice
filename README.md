@@ -1,5 +1,6 @@
 # Practicing Design Trends With React
 [Hosted on Netlify. Click Here](https://confident-ptolemy-17e79e.netlify.app/)
+<br/>
 `Currently Mobile Only`
 
 ## Backend has API calls
@@ -18,7 +19,7 @@
 3. Look up Bulma for transitions
 5. Thinking about every button click changing the full design vs only cards as it is now. 
 6. Create more components so the landing page doesnt get too cluttered. 
-9. Switch button tags to anchor tags to better update style
+10. Look up transparent design.
 
 ## COMPLETED
 1. Research how to send data through Link component.[COMPLETED]
@@ -34,6 +35,7 @@
     - Weather API needs to be called server side. will try to make a Python Backend. [Completed]
 
 8. Switch API calls to backend [Completed]
+9. Switch button tags to anchor tags to better update style [COMPLETED]
 
 <br/>
 <br/>

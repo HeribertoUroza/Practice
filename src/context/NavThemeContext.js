@@ -8,19 +8,21 @@ export const navThemes = {
         cursor: 'pointer',
         boxShadow:
         `12px 12px 16px 0 rgba(255, 255, 255, 1) inset,
-        - 8px -8px 12px 0 rgba(0, 0, 0, .25) inset`,
+        -12px -12px 16px 0 rgba(255, 255, 255, 1) inset`,
+        
     },
 
     transparent: {
-        backgroundColor: 'orange',
+        backgroundColor: 'rgba(0,0,0,0.6)',
         border: 'none',
         textDecoration: 'none',
         cursor: 'pointer',
+        color: 'white'
     },
 
     twoTone: {
-        background: 'grey',
-        border: 'none',
+        background: '#F6B743',
+        border: '#fff9ef 1px solid',
         textDecoration: 'none',
         cursor: 'pointer',
     }
