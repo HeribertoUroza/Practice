@@ -80,17 +80,20 @@ html, body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: nav;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   border-top: 2px black solid;
+  overflow: scroll;
 }
 
 .container nav .nav-btn {
   font-size: 1rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  min-width: 40%;
 }
 
 .container nav .nav-btn:focus {

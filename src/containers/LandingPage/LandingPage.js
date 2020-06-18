@@ -115,6 +115,7 @@ const Landing = () => {
                     <button className='nav-btn' onClick={toggleTheme} href='none' name='neumorphism' style={navTheme} >Neumorphism</button>
                     <button className='nav-btn' onClick={toggleTheme} href='none' name='transparent' style={navTheme} >Transparent</button>
                     <button className='nav-btn' onClick={toggleTheme} href='none' name='twoTone' style={navTheme} >Two Tone</button>
+                    <button className='nav-btn' onClick={toggleTheme} href='none' name='gradient' style={navTheme} >Gradient</button>
                 </nav>
             </div>
         </>
