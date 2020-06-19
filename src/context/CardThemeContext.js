@@ -20,8 +20,11 @@ export const cardThemes = {
     },
 
     twoTone: {
-        background: '#fff9ef',
-        borderColor: '#fff9ef'
+        background: '#FCFFFE',
+        borderColor: '#FCFFFE',
+        boxShadow:
+            `-12px -12px 12px 0 rgba(246, 183, 67, .8),
+            12px 12px 12px 0 rgba(246, 183, 67, .8)`,
     }
 }
 
