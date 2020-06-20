@@ -97,7 +97,8 @@ html, body {
 }
 
 .container nav .nav-btn:focus {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  outline: none;
 }
 /*# sourceMappingURL=app.css.map */
