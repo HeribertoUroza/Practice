@@ -17,7 +17,7 @@ export const navThemes = {
         border: 'none',
         textDecoration: 'none',
         cursor: 'pointer',
-        color: 'white'
+        color: 'white',
     },
 
     twoTone: {
