@@ -14,6 +14,10 @@ export const themes = {
 
     twoTone: {
         background: '#FBD349',
+    },
+
+    gradient: {
+        background: 'linear-gradient(144deg, rgba(22,136,242,1) 20%, rgba(98,18,212,1) 63%, rgba(228,7,232,1) 100%)',
     }
 }
 

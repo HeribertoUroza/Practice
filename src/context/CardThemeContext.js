@@ -25,6 +25,10 @@ export const cardThemes = {
         boxShadow:
             `-12px -12px 12px 0 rgba(246, 183, 67, .8),
             12px 12px 12px 0 rgba(246, 183, 67, .8)`,
+    },
+
+    gradient: {
+       color: 'white',
     }
 }
 

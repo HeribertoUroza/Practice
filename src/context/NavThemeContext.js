@@ -25,6 +25,11 @@ export const navThemes = {
         border: '#F6B743 1px solid',
         textDecoration: 'none',
         cursor: 'pointer',
+    },
+
+    gradient: {
+        background: 'linear-gradient(144deg, rgba(22,136,242,1) 20%, rgba(98,18,212,1) 63%, rgba(228,7,232,1) 100%)',
+        color: 'white',
     }
 }
 
