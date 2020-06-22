@@ -18,7 +18,7 @@
 ## ToDo
 3. Look up Bulma for transitions
 6. Create more components so the landing page doesnt get too cluttered. 
-11. Look up gradient design.
+11. Look up gradient design. Decide on which colors to choose.
 
 ## COMPLETED
 1. Research how to send data through Link component.[COMPLETED]
