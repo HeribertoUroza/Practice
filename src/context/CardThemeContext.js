@@ -28,7 +28,8 @@ export const cardThemes = {
     },
 
     gradient: {
-       color: 'white',
+        color: 'white',
+        backdropFilter: 'blur(5px)'
     }
 }
 
