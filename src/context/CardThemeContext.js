@@ -29,7 +29,10 @@ export const cardThemes = {
 
     gradient: {
         color: 'white',
-        backdropFilter: 'blur(5px)'
+        borderColor: 'transparent',
+        boxShadow:
+            `-6px -6px 6px 0 rgba(228,7,232,.4),
+            6px 6px 6px 0 rgba(22,136,242,.4)`,
     }
 }
 
