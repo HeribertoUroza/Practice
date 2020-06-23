@@ -17,14 +17,20 @@ export const navThemes = {
         border: 'none',
         textDecoration: 'none',
         cursor: 'pointer',
-        color: 'white'
+        color: 'white',
     },
 
     twoTone: {
-        background: '#F6B743',
-        border: '#fff9ef 1px solid',
+        background: '#FBD349',
+        border: '#F6B743 1px solid',
         textDecoration: 'none',
         cursor: 'pointer',
+    },
+
+    gradient: {
+        background: 'rgba(228,7,232,1)',
+        color: 'white',
+        borderColor: 'rgba(22,136,242,1)'
     }
 }
 
